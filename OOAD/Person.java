@@ -1,15 +1,12 @@
 import java.util.ArrayList;
-import java.util.List;
-
 class Person {
     private String id;
     private String name;
-    private List<Mobile> mobiles; // List to store 1 to 2 Mobile objects
+    private ArrayList<Mobile> mobiles = new ArrayList<>(); 
 
     public Person(String id, String name) {
         this.id = id;
-        this.name = name;
-        this.mobiles = new ArrayList<>(); // Initialize the list
+        this.name = name; 
     }
 
     public void set(String id, String name) {
@@ -21,7 +18,7 @@ class Person {
         if (mobiles.size() < 2) {
             mobiles.add(mobile);
         } else {
-            System.out.println("A person can own a maximum of 2 mobiles.");
+            System.out.println("A person can own 1 or 2 mobiles.");
         }
     }
 

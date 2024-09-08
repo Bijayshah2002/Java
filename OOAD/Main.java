@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        // Example usage
         Person person = new Person("1", "Bijay Shah");
         
         Mobile mobile1 = new Mobile("1234567890", "Samsung");

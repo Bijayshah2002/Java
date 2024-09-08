@@ -1,21 +1,21 @@
 class Bill {
-    private String billNo;
-    private String mobileNumber;
-    private double amount;
+    private String Bill_no;
+    private String Mobile_number;
+    private double Amount;
 
-    public Bill(String billNo, String mobileNumber, double amount) {
-        this.billNo = billNo;
-        this.mobileNumber = mobileNumber;
-        this.amount = amount;
+    public Bill(String bill_no, String mobileNumber, double amount) {
+        Bill_no = bill_no;
+        Mobile_number = mobileNumber;
+        Amount = amount;
     }
 
-    public void set(String billNo, String mobileNumber, double amount) {
-        this.billNo = billNo;
-        this.mobileNumber = mobileNumber;
-        this.amount = amount;
+    public void set(String bill_no, String mobileNumber, double amount) {
+        Bill_no = bill_no;
+        Mobile_number = mobileNumber;
+        Amount = amount;
     }
 
     public void display() {
-        System.out.println("Bill No: " + billNo + ", Mobile Number: " + mobileNumber + ", Amount: " + amount);
+        System.out.println("Bill No: " + Bill_no + ", Mobile Number: " + Mobile_number + ", Amount: " + Amount);
     }
 }
